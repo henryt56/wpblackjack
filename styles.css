@@ -1,0 +1,33 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.title {
+    text-align: center;
+
+}
+
+.buttons {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: 50px ;
+}
+
+
+.button-div {
+    padding: 10px;
+    margin: 10px;
+}
+
+.home-button {
+    background-color: #04AA6D;
+    border-radius: 2rem;
+    color: white;
+    padding: 15px 32px;
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 2px 2px 8px black;
+}
