@@ -65,7 +65,7 @@ h2 {
 /* Card back */
 .card.back {
     background-color: red;
-    background-image: url('card-back.png'); /* Add an image for better effect */
+    background-image: url('card-back.png');
     background-size: cover;
 }
 
