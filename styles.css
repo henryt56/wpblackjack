@@ -22,6 +22,10 @@ nav a:hover {
     text-decoration: underline;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /* Game container */
 .game-container {
     padding: 20px;
@@ -118,4 +122,31 @@ h2 {
 
 .stand:hover {
     background-color: darkred;
+}
+
+/* Home button styles */
+
+.button-div {
+
+    padding: 10px;
+    margin: 10px;
+}
+
+.home-button {
+    background-color: maroon;
+    border-radius: 2rem;
+    color: white;
+    padding: 15px 32px;
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 2px 2px 8px black;
+    transition: background-color 0.3s, width .15s
+}
+
+.home-button:hover {
+    background-color: darkred;
+    width: 11%;
 }
