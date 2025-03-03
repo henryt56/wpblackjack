@@ -156,3 +156,73 @@ body {
     background-size: cover;
     animation: fadeIn 3s ease-out;
 }
+
+/* Deal In Page */
+
+body.deal-in-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+.deal-in-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.pot {
+    background-color: #CAB19B; 
+    color: black;
+    width: 300px; 
+    height: 200px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    padding: 20px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    font-size: 20px;
+    text-align: center;
+}
+
+.pot label {
+    font-weight: bold;
+    margin-bottom: 15px; 
+}
+
+.button-div {
+    margin-bottom: 30px; 
+}
+
+.chips-container {
+    background-color: #35654D; 
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 350px; 
+    height: 250px;
+    box-shadow: 0 0 10px black;
+    margin-right: 50px; 
+}
+
+.chip {
+    background-color: gray;
+    color: black;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    box-shadow: 2px 2px 5px black;
+}
