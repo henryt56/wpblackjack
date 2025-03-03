@@ -334,20 +334,6 @@ body.deal-in-page {
     }
 }
 
-
-/* Keyframes for subtle card hovering effect */
-@keyframes cardHover {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-5px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
 /* Apply animations to cards when page loads */
 .dealer-cards .card:nth-child(1) {
     animation: dealCard 0.5s ease-out 0.5s both;
