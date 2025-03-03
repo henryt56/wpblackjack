@@ -150,3 +150,9 @@ h2 {
     background-color: darkred;
     width: 11%;
 }
+
+body {
+    background: url('casino-background.png') no-repeat center center fixed;
+    background-size: cover;
+    animation: fadeIn 3s ease-out;
+}
