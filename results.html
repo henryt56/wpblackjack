@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blackjack - Game</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @keyframes flipCard {
+            0% { transform: rotateY(0deg); }
+            100% { transform: rotateY(180deg); }
+        }
+        .card.flip {
+            animation: flipCard 0.6s ease-out forwards;
+        }
+        @keyframes dealCard {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .new-card {
+            animation: dealCard 0.5s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .game-result {
+            animation: fadeIn 1s ease-in forwards;
+        }
+    </style>
 </head>
 <body>
     <div class="game-container">
@@ -20,15 +44,16 @@
                 <h2>Dealer</h2>
                 <div class="dealer-cards card-row">
                     <div class="card">A<span class="suit">♠</span></div>
-                    <div class="card card-back"></div>
+                    <div class="card flip red">10<span class="suit">♦</span></div>
+                    <div class="card new-card">8<span class="suit">♣</span></div>
                 </div>
-                <div class="score">Dealer: 24</div>
+                <div class="score">Dealer: 19</div>
             </div>            
             
             <div class="player-area">
                 <h2>Player</h2>
                 <div class="player-cards card-row">
-                    <div class="card">10<span class="suit">♥</span></div>
+                    <div class="card red">10<span class="suit">♥</span></div>
                     <div class="card">J<span class="suit">♣</span></div>
                 </div>
                 <div class="score">Player: 20</div>
@@ -40,7 +65,6 @@
 
         </div>
         
-        
         <div class="game-status">
             <p>Winnings: $100</p>
             <p>Balance: $1100</p>
@@ -50,8 +74,6 @@
             <a class="home-button" href="index.html">Home</a>
             <a class="home-button" href="play.html">Play Again</a>
         </div>
-
-        
     </div>
 </body>
 </html>

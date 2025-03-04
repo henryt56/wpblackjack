@@ -189,6 +189,9 @@ h2 {
     position: relative;
     transition: all 0.3s ease;
 }
+.red {
+    color: red;
+}
 
 .card .suit {
     font-size: 24px;
@@ -421,6 +424,7 @@ body.deal-in-page {
     display: block;
     z-index: 10; /* Ensures it appears on top of everything */
 }
+
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
