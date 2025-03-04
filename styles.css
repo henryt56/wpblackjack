@@ -26,6 +26,114 @@ ul {
     list-style-type: none;
 }
 
+/* Settings page styles */
+.settings-page {
+    background-color: #8c6347;
+    color: white;
+}
+
+.settings-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.theme-toggle {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.theme-label {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.theme-label.classic { background-color: maroon; color: white; }
+.theme-label.dark { background-color: black; color: white; }
+.theme-label.casino { background-color: gold; color: black; }
+
+.theme-label:hover {
+    transform: scale(1.1);
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+.theme-preview-wrapper {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.preview-box {
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+/* Default/Classic Theme */
+.preview-box {
+    background-color: maroon;
+    border: 3px solid darkred;
+    color: white;
+}
+
+.preview-box:after {
+    content: "Classic Theme";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+}
+
+/* Dark Theme */
+#dark:checked ~ .theme-preview-wrapper .preview-box {
+    background-color: #1a1a1a !important;
+    border: 3px solid #333 !important;
+    color: white !important;
+}
+
+#dark:checked ~ .theme-preview-wrapper .preview-box:after {
+    content: "Dark Theme" !important;
+}
+
+/* Casino Theme */
+#casino:checked ~ .theme-preview-wrapper .preview-box {
+    background-color: #35654D !important;
+    border: 3px solid gold !important;
+    color: gold !important;
+}
+
+#casino:checked ~ .theme-preview-wrapper .preview-box:after {
+    content: "Casino Theme" !important;
+}
+
+#classic:checked ~ .theme-preview-wrapper .preview-box {
+    background-color: maroon !important;
+    border: 3px solid darkred !important;
+    color: white !important;
+}
+
+
+
 /* Game container */
 .game-container {
     padding: 20px;
