@@ -404,6 +404,24 @@ body.deal-in-page {
     margin: 30px 0;
 }
 
+/* Game Results */
+.game-result {
+    position: absolute; /* Position it inside the .table */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center it */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+    color: white;
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    display: block;
+    z-index: 10; /* Ensures it appears on top of everything */
+}
+
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
     .table {
