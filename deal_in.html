@@ -8,30 +8,62 @@
     </head>
 
     <body class="deal-in-page">
-        <div class= "deal-in-container">
+        <h1>Place Your Bet</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="deal_in.html">Play</a> |
+            <a href="settings.html">Settings</a>
+        </nav>
+        <div class="deal-in-container">
             <div class="chips-container">
-                <div class="chip">1</div>
-                <div class="chip">5</div>
-                <div class="chip">25</div>
-                <div class="chip">50</div>
-                <div class="chip">100</div>
-                <div class="chip">500</div>
-                <div class="chip">1000</div>
-                <div class="chip">10000</div>
+                <label class="chip-label">
+                    <input type="radio" name="bet" value="1" class="chip-radio">
+                    <div class="chip">1</div>
+                </label>
+                <label class="chip-label">
+                    <input type="radio" name="bet" value="5" class="chip-radio">
+                    <div class="chip">5</div>
+                </label>
+                <label class="chip-label">
+                    <input type="radio" name="bet" value="25" class="chip-radio">
+                    <div class="chip">25</div>
+                </label>
+                <label class="chip-label">
+                    <input type="radio" name="bet" value="50" class="chip-radio">
+                    <div class="chip">50</div>
+                </label>
+                <label class="chip-label">
+                    <input type="radio" name="bet" value="100" checked class="chip-radio">
+                    <div class="chip">100</div>
+                </label>
+                <label class="chip-label">
+                    <input type="radio" name="bet" value="500" class="chip-radio">
+                    <div class="chip">500</div>
+                </label>
+                <label class="chip-label">
+                    <input type="radio" name="bet" value="1000" class="chip-radio">
+                    <div class="chip">1000</div>
+                </label>
+                <label class="chip-label">
+                    <input type="radio" name="bet" value="10000" class="chip-radio">
+                    <div class="chip">10000</div>
+                </label>
             </div>
         
             <div class="pot">
-                <label>Pot: ______ </label>
+                <label>Pot: $100</label>
+                <div class="chip-display">
+                    <div class="placed-chip">100</div>
+                </div>
             </div>
         </div>
         
-
         <div class="button-div">
-            <a class="home-button" href="play.html">Deal In</a>
+            <a class="button deal" href="play.html">Deal In</a>
         </div>
 
-        <div class="balance-container">
-            <h3>Balance: $<span id="balance">5000</span></h3>
+        <div class="game-status">
+            <p>Balance: $<span id="balance">1000</span></p>
         </div>
     </body>
 </html>

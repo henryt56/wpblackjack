@@ -18,26 +18,28 @@
         <div class="table">
             <div class="dealer-area">
                 <h2>Dealer</h2>
-                <div class="dealer-cards">
-                    <img src="card-back.png" alt="Card" class="card flip-card">
-                    <img src="card-back.png" alt="Card" class="card flip-card">
+                <div class="dealer-cards card-row">
+                    <div class="card">A<span class="suit">♠</span></div>
+                    <div class="card card-back"></div>
                 </div>
+                <div class="score">Dealer: ?</div>
             </div>
             
             <div class="player-area">
                 <h2>Player</h2>
-                <div class="player-cards">
-                    <img src="card-back.png" alt="Card" class="card flip-card">
-                    <img src="card-back.png" alt="Card" class="card flip-card">
+                <div class="player-cards card-row">
+                    <div class="card red">10<span class="suit">♥</span></div>
+                    <div class="card">J<span class="suit">♣</span></div>
                 </div>
+                <div class="score">Player: 20</div>
             </div>
         </div>
         
         <div class="controls">
-            <a href="play.html" class="button">Hit</a>
-            <a href="play.html" class="button">Stand</a>
-            <a href="play.html" class="button">Double Down</a>
-            <a href="play.html" class="button">Split</a>
+            <button class="button hit">Hit</button>
+            <a href= "results.html"><button class="button stand">Stand</button></a>
+            <button class="button double">Double Down</button>
+            <button class="button split" disabled>Split</button>
         </div>
     
         <div class="result-screen">

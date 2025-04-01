@@ -3,16 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WP Blackjack - Settings</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Blackjack - Settings</title>
 </head>
-<body>
-    <h1>Game Settings</h1>
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="rules.html">Rules</a> |
-        <a href="settings.html">Settings</a>
-    </nav>
-    
+<body class="settings-page">
+    <div class="settings-container">
+        <h1>Settings</h1>
+        
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="deal_in.html">Play</a> |
+            <a href="rules.html">Rules</a>
+        </nav>
+        
+        <input type="radio" id="classic" name="theme" checked>
+        <input type="radio" id="dark" name="theme">
+        <input type="radio" id="casino" name="theme">
+        
+        <div class="theme-toggle">
+            <label for="classic" class="theme-label classic">Classic Theme</label>
+            <label for="dark" class="theme-label dark">Dark Theme</label>
+            <label for="casino" class="theme-label casino">Casino Theme</label>
+        </div>
+        
+        <div class="theme-preview-wrapper">
+            <p>Theme Preview: See how different themes look below.</p>
+            <div class="preview-box"></div>
+        </div>
+    </div>
 </body>
 </html>
